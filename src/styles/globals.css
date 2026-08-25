@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import "tailwindcss";
+@import "@heroui/styles";
+
+@custom-variant dark (&:is(.dark *));
+
+
+@theme {
+  --font-sans: 'Roboto', sans-serif;
+  --font-normal: 'Roboto', sans-serif;
+} 
+:root {
+  /* Override default colors */
+  --background: #ffffff;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+}
+[data-theme="dark"] {
+  /* Override dark theme colors */
+  --background: #000000;
+}

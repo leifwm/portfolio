@@ -1,0 +1,551 @@
+"use client";
+
+import React from "react";
+
+const metrics = [
+  { value: "4 weeks", label: "Research cycle" },
+  { value: "107", label: "Responses collected" },
+  { value: "205", label: "People invited" },
+];
+
+const frictionAreas = [
+  {
+    number: "01",
+    title: "Hardware performance",
+    description:
+      "Aging devices were beginning to show limitations around performance and battery life.",
+  },
+  {
+    number: "02",
+    title: "Software compatibility",
+    description:
+      "Large spreadsheets, heavy files, and enterprise software did not always work well in the iPad environment.",
+  },
+  {
+    number: "03",
+    title: "Interaction",
+    description:
+      "Touch wasn't always the most effective way to complete tasks designed around keyboards and traditional desktop interaction.",
+  },
+  {
+    number: "04",
+    title: "Context of use",
+    description:
+      "The device was used across different environments, creating additional needs around speed, presentation, and handling.",
+  },
+  {
+    number: "05",
+    title: "Connectivity",
+    description:
+      "People needed to connect the device to other equipment and peripherals as part of their everyday work.",
+  },
+];
+
+const recommendations = [
+  {
+    number: "01",
+    title: "Refresh the hardware",
+    description:
+      "Address the genuine performance and battery limitations created by aging devices.",
+  },
+  {
+    number: "02",
+    title: "Expand connectivity",
+    description:
+      "Support connections to the equipment and ports people need across different work contexts.",
+  },
+  {
+    number: "03",
+    title: "Support different ways of working",
+    description:
+      "Enable more effective interaction through peripherals such as a keyboard and trackpad.",
+  },
+];
+
+export default function FieldWorkExperienceCaseStudy() {
+  return (
+    <main className="mx-auto max-w-4xl px-6 py-16 md:py-24">
+      <header className="mb-24 max-w-3xl">
+        <p className="mb-4 text-sm font-medium uppercase tracking-widest text-default-500">
+          Research · Service Design · AI-assisted Analysis
+        </p>
+
+        <h1 className="text-4xl font-semibold tracking-tight md:text-6xl">
+          Looking beyond the device
+        </h1>
+
+        <p className="mt-6 text-xl leading-relaxed text-default-600 md:text-2xl">
+          Understanding how technology supports people working in the field.
+        </p>
+
+        <div className="mt-10 border-l-2 border-foreground pl-6">
+          <p className="text-lg leading-relaxed md:text-xl">
+            How might we understand what is actually creating friction in the
+            field team's work before making a significant technology investment?
+          </p>
+        </div>
+
+        <div className="mt-14 grid gap-8 border-y border-default-200 py-8 sm:grid-cols-3">
+          {metrics.map((metric) => (
+            <div key={metric.label}>
+              <p className="text-2xl font-semibold tracking-tight">
+                {metric.value}
+              </p>
+              <p className="mt-1 text-sm text-default-500">{metric.label}</p>
+            </div>
+          ))}
+        </div>
+      </header>
+
+      <Section title="Overview">
+        <p>
+          A potential hardware upgrade raised a straightforward question:
+          should the company replace the iPads used by its field team?
+        </p>
+
+        <p>
+          Replacing the equipment represented a significant investment. Before
+          making that decision, we needed to understand how well the existing
+          devices supported people's day-to-day work—and whether newer hardware
+          would actually solve the problems they experienced.
+        </p>
+
+        <p>
+          Over a four-week research cycle, we gathered feedback from the field
+          team and combined quantitative responses with qualitative feedback to
+          build a clearer picture of their experience.
+        </p>
+
+        <p>
+          AI was used to help analyze and compile the results, accelerating the
+          synthesis process and creating more time to focus on interpreting what
+          the findings meant.
+        </p>
+
+        <Quote>
+          What began as a question about replacing a device became a broader
+          investigation into the system surrounding it.
+        </Quote>
+      </Section>
+
+      <Section title="The challenge">
+        <p>The original question was simple:</p>
+
+        <Quote>Do we need to replace the iPads?</Quote>
+
+        <p>But technology rarely exists in isolation.</p>
+
+        <p>
+          A device can perform well and still create a frustrating experience
+          when the software, workflows, connectivity, or physical environment
+          around it don't support the work people need to do.
+        </p>
+
+        <p>The real challenge became:</p>
+
+        <Quote>
+          How might we understand what is actually creating friction in the
+          field team's work before making a significant technology investment?
+        </Quote>
+      </Section>
+
+      <Section title="My role">
+        <div className="border border-default-200 p-6 md:p-8">
+          <h3 className="text-lg font-semibold">Research & Service Design</h3>
+
+          <p className="mt-4 text-default-600">
+            My role focused on turning a broad business question into an
+            evidence-based understanding of the field team's experience.
+          </p>
+
+          <div className="mt-8 grid gap-x-8 gap-y-3 text-sm text-default-600 sm:grid-cols-2">
+            <span>— Research design</span>
+            <span>— Survey development</span>
+            <span>— Quantitative analysis</span>
+            <span>— Qualitative research synthesis</span>
+            <span>— AI-assisted analysis</span>
+            <span>— Insight identification</span>
+            <span>— Recommendation development</span>
+          </div>
+        </div>
+      </Section>
+
+      <Section title="Researching under a real decision timeline">
+        <p>
+          The project needed to provide useful evidence quickly enough to
+          support an upcoming investment decision.
+        </p>
+
+        <p>
+          Over four weeks, the research collected feedback across different
+          aspects of the field experience, including satisfaction with the
+          equipment, technical issues, software use, work contexts, and unmet
+          needs.
+        </p>
+
+        <p>
+          The survey reached 205 people and received 107 responses, combining
+          quantitative indicators with open-ended feedback.
+        </p>
+
+        <ResearchProcess />
+
+        <p>
+          AI was used as an assistant during the analysis process to help
+          compile responses and organize recurring themes across the data.
+        </p>
+
+        <Quote>
+          The goal wasn't to automate judgment. It was to spend less time
+          organizing information and more time understanding what the evidence
+          meant.
+        </Quote>
+      </Section>
+
+      <Section title="The device was valued—even when it wasn't enough">
+        <div className="my-12 border-y border-default-200 py-10">
+          <div className="grid gap-8 md:grid-cols-[0.8fr_1.2fr] md:items-center">
+            <div>
+              <p className="text-6xl font-semibold tracking-tight md:text-7xl">
+                77%
+              </p>
+              <p className="mt-3 text-sm text-default-500">
+                of respondents evaluated their experience with the iPad
+                positively
+              </p>
+            </div>
+
+            <div className="space-y-4 text-default-600">
+              <p>
+                Practicality and portability were important strengths,
+                particularly for people working across different locations.
+              </p>
+              <p>
+                But positive satisfaction didn't mean the experience was
+                frictionless.
+              </p>
+              <p>
+                Recurring issues with battery life, screen size, performance,
+                and applications revealed limitations beyond the device itself.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <Quote>
+          People didn't dislike the device. They were struggling with parts of
+          the experience around it.
+        </Quote>
+      </Section>
+
+      <Section title="The problem wasn't one thing">
+        <p>
+          As the responses were analyzed, it became clear that the challenges
+          couldn't be explained by hardware alone.
+        </p>
+
+        <FrictionAreas />
+
+        <p>
+          The same device could support one task effectively while becoming a
+          source of friction in another context.
+        </p>
+      </Section>
+
+      <Section title="Looking beyond the device">
+        <p>
+          The most important shift in the project was a change in perspective.
+        </p>
+
+        <Quote>The iPad wasn't the experience.</Quote>
+
+        <p>
+          It was one part of a broader system that shaped how people were able
+          to work.
+        </p>
+
+        <WorkExperienceEcosystem />
+
+        <p>
+          Replacing the hardware could solve some problems, particularly those
+          caused by aging devices. But it wouldn't automatically resolve
+          software limitations or workflows that required different ways of
+          interacting with information.
+        </p>
+
+        <div className="my-12 grid gap-8 border-y border-default-200 py-8 md:grid-cols-2">
+          <div>
+            <p className="text-sm font-medium uppercase tracking-widest text-default-500">
+              Before
+            </p>
+            <p className="mt-3 text-xl font-medium">
+              Which device should we buy?
+            </p>
+          </div>
+
+          <div>
+            <p className="text-sm font-medium uppercase tracking-widest text-default-500">
+              After
+            </p>
+            <p className="mt-3 text-xl font-medium">
+              What does the field team need to work effectively?
+            </p>
+          </div>
+        </div>
+      </Section>
+
+      <Section title="From findings to a broader recommendation">
+        <p>
+          Rather than proposing a single solution, the research pointed toward
+          addressing different layers of the experience.
+        </p>
+
+        <Recommendations />
+
+        <p>
+          Together, these recommendations treated the device as part of a work
+          ecosystem rather than assuming that newer hardware was the answer to
+          every problem.
+        </p>
+      </Section>
+
+      <Section title="Outcome">
+        <p>
+          Within four weeks, the project transformed a binary equipment question
+          into a more nuanced understanding of the field team's work experience.
+        </p>
+
+        <p>
+          The research provided evidence that supported a hardware refresh while
+          also making visible the limitations that an upgrade alone would not
+          solve.
+        </p>
+
+        <div className="my-10 grid gap-4 sm:grid-cols-3">
+          <OutcomeCard
+            title="Hardware"
+            description="Performance and battery limitations"
+          />
+          <OutcomeCard
+            title="Connectivity"
+            description="Support for additional equipment"
+          />
+          <OutcomeCard
+            title="Interaction"
+            description="More effective ways of working"
+          />
+        </div>
+
+        <p>
+          AI-assisted analysis helped accelerate the compilation and synthesis
+          of the research, supporting a faster path from feedback to actionable
+          findings.
+        </p>
+
+        <Quote>
+          It wasn't only about deciding whether to replace the iPads. It was
+          about understanding what people needed to work effectively.
+        </Quote>
+      </Section>
+
+      <section className="pt-8">
+        <hr className="mb-12 border-default-200" />
+
+        <p className="text-sm font-medium uppercase tracking-widest text-default-500">
+          Reflection
+        </p>
+
+        <h2 className="mt-4 text-3xl font-semibold tracking-tight md:text-4xl">
+          A product problem is often a system problem in disguise.
+        </h2>
+
+        <div className="mt-8 max-w-3xl space-y-6 text-lg leading-relaxed text-default-600">
+          <p>
+            This project reinforced the importance of looking beyond the object
+            at the center of a business question.
+          </p>
+
+          <p>
+            The devices had real limitations, and replacing aging hardware was
+            part of the answer. But the research showed that the experience was
+            also shaped by software, workflows, physical interaction, and the
+            environments where people worked.
+          </p>
+
+          <p>
+            A newer device can solve a performance problem. It can't necessarily
+            solve a workflow problem.
+          </p>
+        </div>
+
+        <div className="mt-12 border-l-2 border-foreground py-2 pl-6">
+          <p className="text-xl font-medium leading-relaxed">
+            Research creates value not just by validating a decision, but by
+            making sure an organization is solving the right problem before it
+            invests in a solution.
+          </p>
+        </div>
+
+        <div className="mt-12 max-w-3xl space-y-6 text-lg leading-relaxed text-default-600">
+          <p>
+            This project was also an example of how AI can support research
+            practice. Used thoughtfully, it can help accelerate the work of
+            organizing and compiling information—creating more space for
+            interpretation and judgment.
+          </p>
+        </div>
+      </section>
+    </main>
+  );
+}
+
+function Section({
+  title,
+  children,
+}: {
+  title: string;
+  children: React.ReactNode;
+}) {
+  return (
+    <section className="mb-24">
+      <p className="mb-5 text-sm font-medium uppercase tracking-widest text-default-500">
+        {title}
+      </p>
+      <div className="max-w-3xl space-y-6 text-lg leading-relaxed text-default-700">
+        {children}
+      </div>
+    </section>
+  );
+}
+
+function Quote({ children }: { children: React.ReactNode }) {
+  return (
+    <blockquote className="my-10 border-l-2 border-foreground pl-6 text-xl font-medium leading-relaxed md:text-2xl">
+      {children}
+    </blockquote>
+  );
+}
+
+function ResearchProcess() {
+  const steps = [
+    ["Research question", "What is creating friction in the field experience?"],
+    ["Field team feedback", "Quantitative responses and qualitative feedback"],
+    [
+      "AI-assisted analysis",
+      "Compiling results and organizing recurring patterns",
+    ],
+    ["Design interpretation", "Understanding what was actually causing friction"],
+    ["Recommendations", "Turning evidence into actionable decisions"],
+  ];
+
+  return (
+    <div className="my-12 border-y border-default-200">
+      {steps.map(([title, description], index) => (
+        <div
+          key={title}
+          className="grid grid-cols-[48px_1fr] gap-5 border-b border-default-200 py-6 last:border-b-0"
+        >
+          <span className="text-sm font-medium text-default-400">
+            {String(index + 1).padStart(2, "0")}
+          </span>
+          <div>
+            <h3 className="font-semibold">{title}</h3>
+            <p className="mt-1 text-sm text-default-600">{description}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+}
+
+function FrictionAreas() {
+  return (
+    <div className="my-12 border-y border-default-200">
+      {frictionAreas.map((area) => (
+        <article
+          key={area.number}
+          className="grid gap-4 border-b border-default-200 py-7 last:border-b-0 md:grid-cols-[72px_0.8fr_1.4fr]"
+        >
+          <span className="text-sm font-medium text-default-400">
+            {area.number}
+          </span>
+          <h3 className="font-semibold">{area.title}</h3>
+          <p className="text-default-600">{area.description}</p>
+        </article>
+      ))}
+    </div>
+  );
+}
+
+function WorkExperienceEcosystem() {
+  const elements = [
+    "Device",
+    "Software",
+    "Interaction",
+    "Connectivity",
+    "Environment",
+    "Tasks",
+  ];
+
+  return (
+    <figure className="my-12 border border-default-200 p-6 md:p-10">
+      <figcaption>
+        <p className="text-sm font-medium uppercase tracking-widest text-default-500">
+          The work experience ecosystem
+        </p>
+        <p className="mt-2 text-default-600">
+          The device was only one part of a broader system.
+        </p>
+      </figcaption>
+
+      <div className="mt-10 flex flex-wrap items-center gap-x-3 gap-y-4">
+        {elements.map((element, index) => (
+          <React.Fragment key={element}>
+            <span className="border border-default-200 px-4 py-3 text-sm font-medium">
+              {element}
+            </span>
+            {index < elements.length - 1 && (
+              <span className="hidden text-default-400 sm:inline">→</span>
+            )}
+          </React.Fragment>
+        ))}
+      </div>
+    </figure>
+  );
+}
+
+function Recommendations() {
+  return (
+    <div className="my-12">
+      {recommendations.map((recommendation) => (
+        <article
+          key={recommendation.number}
+          className="grid gap-4 border-t border-default-200 py-7 md:grid-cols-[72px_0.8fr_1.4fr]"
+        >
+          <span className="text-sm font-medium text-default-400">
+            {recommendation.number}
+          </span>
+          <h3 className="font-semibold">{recommendation.title}</h3>
+          <p className="text-default-600">{recommendation.description}</p>
+        </article>
+      ))}
+    </div>
+  );
+}
+
+function OutcomeCard({
+  title,
+  description,
+}: {
+  title: string;
+  description: string;
+}) {
+  return (
+    <div className="border border-default-200 p-5">
+      <h3 className="font-semibold">{title}</h3>
+      <p className="mt-2 text-sm leading-relaxed text-default-600">
+        {description}
+      </p>
+    </div>
+  );
+}

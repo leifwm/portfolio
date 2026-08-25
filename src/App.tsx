@@ -1,0 +1,26 @@
+import { Route, Routes } from "react-router-dom";
+
+import IndexPage from "@/pages/index";
+import ProjectsPage from "@/pages/projects";
+import CVPage from "@/pages/cv";
+import TratoPage from "@/pages/trato";
+import PertinhoPage from "@/pages/pertinho";
+import SerDigitalCaseStudy from "@/pages/ser";
+import FieldWorkExperienceCaseStudy from "./components/project_component_ipadsurvey";
+
+
+function App() {
+  return (
+    <Routes>
+      <Route element={<IndexPage />} path="/" />
+      <Route element={<ProjectsPage />} path="/projects" />
+      <Route element={<CVPage />} path="/cv" />
+      <Route element={<TratoPage />} path="/trato" />
+      <Route element={<PertinhoPage />} path="/pertinho" />
+      <Route element={<SerDigitalCaseStudy />} path="/ser" />
+      <Route element={<FieldWorkExperienceCaseStudy />} path="/ipadsurvey" />
+    </Routes>
+  );
+}
+
+export default App;
