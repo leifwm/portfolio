@@ -1,11 +1,12 @@
 import type { Project } from "@/types";
+import { assetUrl } from "@/config/site";
 
 export const projectPreviews = {
   projects: [
     {
       id: 1,
       title: "Trato",
-      img: "/assets/img/project_thumbnails/TratoFretesVideo.webm",
+      img: assetUrl("/assets/img/project_thumbnails/TratoFretesVideo.webm"),
       format: "video/webm",
       description: "Expanding the pilot app from VLI (Top 5 largest logistic brazilian companies) from only connecting truck drivers with terminals to establishing a service ecosystem to support the truck drivers journey.",
       tags: ["Service Design", "Ux Research", "Product Design"],
@@ -14,7 +15,7 @@ export const projectPreviews = {
     {
       id: 2,
       title: "Pertinho de Casa",
-      img: "/assets/img/project_thumbnails/PertinhoLogo.png",
+      img: assetUrl("/assets/img/project_thumbnails/PertinhoLogo.png"),
       format: "image/png",
       description: "Translated to Close to Home was a digital service born from Aa non-profit joint venture between Rede Asta and Accenture to help micro and small business during the pandemic by creating a B2C service",
       tags: ["Service Design", "Product Design"],
@@ -23,7 +24,7 @@ export const projectPreviews = {
     {
       id: 3,
       title: "Ser Digital",
-      img: "/assets/img/project_thumbnails/SerEducacional.png",
+      img: assetUrl("/assets/img/project_thumbnails/SerEducacional.png"),
       format: "image/png",
       description: "Ser Educacional (one of the biggest private higher education groups in Brazil) was looking to understand why students were dropping out and create solutions to solve this business problem while also undergoing a digital transformation in the company.",
       tags: ["Service Design", "Ux Research"],
@@ -32,7 +33,7 @@ export const projectPreviews = {
     {
       id: 4,
       title: "Filed Team Equipment Satisfaction Survey",
-      img: "/assets/img/project_thumbnails/survey.lottie",
+      img: assetUrl("/assets/img/project_thumbnails/survey.lottie"),
       format: "application/lottie",
       description: "A more straight forward project, a satisfaction survey enhanced by the use of AI in its creation and analysis, to understand how the field team felt about the equipment they were using in their daily work.",
       tags: ["Service Design"],
@@ -41,7 +42,7 @@ export const projectPreviews = {
     {
       id: 5,
       title: "Project 5",
-      img: "/assets/img/project_thumbnails/project4.png",
+      img: assetUrl("/assets/img/project_thumbnails/project4.png"),
       format: "image/png",
       description: "Pellentesque pretium convallis tempus. Morbi consequat, nunc ut lobortis tincidunt, mi magna fringilla tellus, at dapibus nisi ligula et odio. Curabitur mollis imperdiet urna eget aliquet. Nam at neque consectetur, consectetur odio sed, pellentesque ante. Proin ultrices malesuada elit, lacinia hendrerit nulla gravida sed. In imperdiet purus at ipsum eleifend egestas. Integer a magna vel nisi blandit sagittis. Donec arcu lorem, bibendum non porttitor vitae, condimentum at purus.",
       tags: ["Service Design"],
@@ -49,7 +50,7 @@ export const projectPreviews = {
     },{
       id: 6,
       title: "Project 6",
-      img: "/assets/img/project_thumbnails/project4.png",
+      img: assetUrl("/assets/img/project_thumbnails/project4.png"),
       format: "image/png",
       description: "Pellentesque pretium convallis tempus. Morbi consequat, nunc ut lobortis tincidunt, mi magna fringilla tellus, at dapibus nisi ligula et odio. Curabitur mollis imperdiet urna eget aliquet. Nam at neque consectetur, consectetur odio sed, pellentesque ante. Proin ultrices malesuada elit, lacinia hendrerit nulla gravida sed. In imperdiet purus at ipsum eleifend egestas. Integer a magna vel nisi blandit sagittis. Donec arcu lorem, bibendum non porttitor vitae, condimentum at purus.",
       tags: ["Service Design"],

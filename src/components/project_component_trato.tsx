@@ -1,3 +1,5 @@
+import { assetUrl } from "@/config/site";
+
 export const insights = [
   {
     title: "Community is critical infrastructure",
@@ -124,7 +126,7 @@ export default function TratoCareCaseStudy() {
         </div>
       </header>
 
-      <img src="/assets/img/trato_imgs/trato_cover.jpg" alt="Trato Care Cover" className="mb-6 rounded-lg" />
+      <img src={assetUrl("/assets/img/trato_imgs/trato_cover.jpg")} alt="Trato Care Cover" className="mb-6 rounded-lg" />
 
       {/* Overview */}
       <Section title="Overview">
@@ -204,7 +206,7 @@ export default function TratoCareCaseStudy() {
       {/* Research */}
       <Section title="Understanding life on the road">
         
-        <img src="/assets/img/trato_imgs/Truck1.jpg" alt="Trato Care Cover" className="mb-6 rounded-lg" />
+        <img src={assetUrl("/assets/img/trato_imgs/Truck1.jpg")} alt="Trato Care Cover" className="mb-6 rounded-lg" />
 
         <p>
           We conducted in-depth interviews and multi-day diaries with truck
@@ -253,7 +255,7 @@ export default function TratoCareCaseStudy() {
             </article>
           ))}
         </div>
-        <img src="/assets/img/trato_imgs/journey_trato.jpg" alt="Truck's Driver Journey" className="mb-6 rounded-lg" />
+        <img src={assetUrl("/assets/img/trato_imgs/journey_trato.jpg")} alt="Truck's Driver Journey" className="mb-6 rounded-lg" />
 
       </Section>
 
@@ -318,7 +320,7 @@ export default function TratoCareCaseStudy() {
           Every service needed to contribute to a larger promise: helping drivers
           operate with greater confidence and control.
         </Callout>
-        <img src="/assets/img/trato_imgs/journey_trato2.jpg" alt="Truck's Driver Journey" className="mb-6 rounded-lg" />
+        <img src={assetUrl("/assets/img/trato_imgs/journey_trato2.jpg")} alt="Truck's Driver Journey" className="mb-6 rounded-lg" />
 
       </Section>
 
@@ -386,24 +388,24 @@ export default function TratoCareCaseStudy() {
             applied to understand what kind of service better answered the trucker's needs.
         </p>
 
-        <img src="/assets/img/trato_imgs/trato_service_concepts.jpg" alt="Service Concepts" className="mb-6 rounded-lg" />
+        <img src={assetUrl("/assets/img/trato_imgs/trato_service_concepts.jpg")} alt="Service Concepts" className="mb-6 rounded-lg" />
 
         <p>
             Leading the team to create high-fidelity prototypes that brought exactly what the Drivers needed.
         </p>
         <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
           <video
-            src="/assets/img/trato_imgs/Trato_Fretes_Prototipo.webm"
+            src={assetUrl("/assets/img/trato_imgs/Trato_Fretes_Prototipo.webm")}
             className="h-auto w-full rounded-lg"
             controls
           />
           <video
-            src="/assets/img/trato_imgs/Trato_Mapa_Prototipo.webm"
+            src={assetUrl("/assets/img/trato_imgs/Trato_Mapa_Prototipo.webm")}
             className="h-auto w-full rounded-lg"
             controls
           />
           <video
-            src="/assets/img/trato_imgs/Trato_Prototipo_Assinatura_Pneu.webm"
+            src={assetUrl("/assets/img/trato_imgs/Trato_Prototipo_Assinatura_Pneu.webm")}
             className="h-auto w-full rounded-lg"
             controls
           />

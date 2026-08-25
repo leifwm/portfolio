@@ -3,6 +3,8 @@ import { BusinessSegmentationMatrix } from "../../assets/img/pertinho_imgs/Busin
 import traditionalSellerImage from "../../assets/img/pertinho_imgs/Persona_TraditionalSeller.JPG";
 import entrepreneurImage from "../../assets/img/pertinho_imgs/Persona_Entrepreneur.JPG";
 import establishedBusinessImage from "../../assets/img/pertinho_imgs/Persona_EstablishedBusiness.JPG";
+import fluxoCadastroImage from "../../assets/img/pertinho_imgs/fluxo_cadastro.JPG";
+import roadmapImage from "../../assets/img/pertinho_imgs/roadmap.JPG";
 
 const audienceTypes = [
   {
@@ -379,7 +381,7 @@ export default function PertinhoDeCasaCaseStudy() {
       {/* Strategy */}
       <Section title="Designing for resilience, not dependency">
         
-        <img src="../../assets/img/pertinho_imgs/fluxo_cadastro.JPG" className="mt-3 rounded-lg"  alt="User flow diagram showing the steps for a business owner to register and set up their profile on the platform." />
+        <img src={fluxoCadastroImage} className="mt-3 rounded-lg"  alt="User flow diagram showing the steps for a business owner to register and set up their profile on the platform." />
 
         <p>
           The project began as a response to an immediate crisis, but the
@@ -438,7 +440,7 @@ export default function PertinhoDeCasaCaseStudy() {
           support businesses with different levels of maturity rather than
           defining a single “correct” path to digital transformation.
         </p>
-        <img src="../../assets/img/pertinho_imgs/roadmap.JPG" className="mt-3 rounded-lg"  alt="Roadmap illustrating the strategic direction for the platform's development." />
+        <img src={roadmapImage} className="mt-3 rounded-lg"  alt="Roadmap illustrating the strategic direction for the platform's development." />
 
       </Section>
     

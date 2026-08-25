@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import { assetUrl } from "@/config/site";
 
 const studentMindsets = [
   {
@@ -220,7 +221,7 @@ export default function SerDigitalCaseStudy() {
           different relationships with education might require different kinds of
           support.
         </p>
-        <img src="/assets/img/serdigital_imgs/personas.png" alt="Student Personas" className="mb-6 rounded-lg" />
+        <img src={assetUrl("/assets/img/serdigital_imgs/personas.png")} alt="Student Personas" className="mb-6 rounded-lg" />
       </Section>
 
       {/* Strategy */}
@@ -257,7 +258,7 @@ export default function SerDigitalCaseStudy() {
           career, community, development, and life beyond the classroom.
         </p>
         <ServiceEcosystem />
-        <img src="/assets/img/serdigital_imgs/journey_to_be.jpg" alt="Student Personas" className="mb-6 rounded-lg"/>
+        <img src={assetUrl("/assets/img/serdigital_imgs/journey_to_be.jpg")} alt="Student Personas" className="mb-6 rounded-lg"/>
       </Section>
 
       {/* Example */}
@@ -278,7 +279,7 @@ export default function SerDigitalCaseStudy() {
           The goal wasn't simply to add more digital channels. It was to make
           the existing experience feel more coherent.
         </Callout>
-        <img src="/assets/img/serdigital_imgs/roadmap.jpg" alt="Student Personas" className="mb-6 rounded-lg"/>
+        <img src={assetUrl("/assets/img/serdigital_imgs/roadmap.jpg")} alt="Student Personas" className="mb-6 rounded-lg"/>
       </Section>
 
       {/* Prioritization */}
@@ -299,7 +300,7 @@ export default function SerDigitalCaseStudy() {
           This helped distinguish foundational initiatives from longer-term
           opportunities and created a clearer path for implementation.
         </p>
-        <img src="/assets/img/serdigital_imgs/priority_matrix.jpg" alt="Student Personas" className="mb-6 rounded-lg"/>
+        <img src={assetUrl("/assets/img/serdigital_imgs/priority_matrix.jpg")} alt="Student Personas" className="mb-6 rounded-lg"/>
 
       </Section>
 

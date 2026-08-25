@@ -3,6 +3,7 @@ import DefaultLayout from "@/layouts/default";
 import { ProjectCard } from "@/components/projectcard";
 import { Separator } from '@heroui/react';
 import { projectPreviews } from "@/config/projects-preview";
+import { assetUrl } from "@/config/site";
 import { motion } from "motion/react";
 
 export default function IndexPage() {
@@ -11,12 +12,13 @@ export default function IndexPage() {
       <section className="flex flex-col items-center justify-center gap-4 py-0 md:py-10 h-200
       dark:bg-[#050d0f]
       bg-[#F0EDED]
-      bg-[url(/assets/img/fundo3.png)] 
       bg-top
       bg-fixed
       bg-blend-overlay
       relative
-      ">
+      "
+      style={{ backgroundImage: `url(${assetUrl("/assets/img/fundo3.png")})` }}
+      >
         <div className="absolute inset-0 bg-linear-to-t from-white to-transparent
         dark:from-black
         " />
