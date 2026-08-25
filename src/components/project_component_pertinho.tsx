@@ -3,8 +3,8 @@ import { BusinessSegmentationMatrix } from "../../assets/img/pertinho_imgs/Busin
 import traditionalSellerImage from "../../assets/img/pertinho_imgs/Persona_TraditionalSeller.JPG";
 import entrepreneurImage from "../../assets/img/pertinho_imgs/Persona_Entrepreneur.JPG";
 import establishedBusinessImage from "../../assets/img/pertinho_imgs/Persona_EstablishedBusiness.JPG";
-import fluxoCadastroImage from "../../assets/img/pertinho_imgs/fluxo_cadastro.JPG";
-import roadmapImage from "../../assets/img/pertinho_imgs/roadmap.JPG";
+import fluxoCadastroImage from "../../assets/img/pertinho_imgs/fluxo_cadastro.jpg";
+import roadmapImage from "../../assets/img/pertinho_imgs/roadmap.jpg";
 
 const audienceTypes = [
   {
