@@ -3,6 +3,7 @@
 import { buttonVariants , Card, Link, Separator } from "@heroui/react";
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 import { ChipBasic } from "@/components/chip";
+import { routeUrl } from "@/config/site";
 import type { Project } from "@/types";
 
 
@@ -59,7 +60,7 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
             <ChipBasic project={project} />
           </div>
           <Link
-            href={project.href}
+            href={routeUrl(project.href)}
             className={buttonVariants({
               variant: "primary",
               size: "sm",

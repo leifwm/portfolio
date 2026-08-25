@@ -4,7 +4,7 @@ import { useState } from "react";
 import { Link } from "@heroui/react";
 import clsx from "clsx";
 
-import { assetUrl, siteConfig } from "@/config/site";
+import { assetUrl, routeUrl, siteConfig } from "@/config/site";
 import { ThemeSwitch } from "@/components/theme-switch";
 import {
   LinkedIcon,
@@ -32,7 +32,7 @@ export const Navbar = () => {
                     "text-foreground hover:text-accent transition-colors font-medium",
                     "data-[active=true]:text-accent data-[active=true]:font-medium",
                   )}
-                  href={item.href}
+                  href={routeUrl(item.href)}
                 >
                   {item.label}
                 </a>
@@ -104,7 +104,7 @@ export const Navbar = () => {
                         ? "text-danger"
                         : "text-foreground",
                   )}
-                  href={item.href}
+                  href={routeUrl(item.href)}
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.label}
