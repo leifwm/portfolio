@@ -33,7 +33,7 @@ export const projectPreviews = {
     {
       id: 4,
       title: "Filed Team Equipment Satisfaction Survey",
-      img: assetUrl("/assets/img/project_thumbnails/survey.lottie"),
+      img: assetUrl("/assets/img/project_thumbnails/Survey.lottie"),
       format: "application/lottie",
       description: "A more straight forward project, a satisfaction survey enhanced by the use of AI in its creation and analysis, to understand how the field team felt about the equipment they were using in their daily work.",
       tags: ["Service Design"],
