@@ -402,10 +402,9 @@ function Section({
 }) {
   return (
     <section className="mb-24">
-      <p className="mb-4 text-sm font-medium uppercase tracking-widest text-default-500">
+      <p className="mb-4 text-[30px] font-light tracking-widest text-default-500">
         {title}
       </p>
-
       <div className="space-y-6 text-lg leading-relaxed text-default-700">
         {children}
       </div>

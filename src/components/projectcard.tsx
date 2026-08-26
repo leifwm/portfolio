@@ -51,6 +51,7 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
       <div className="flex flex-1 flex-col gap-0">
         <Card.Header className="gap-1">
           <Card.Title className="font-bold text-[40px]/10 max-w-100 ">{project.title}</Card.Title>
+          <p className="text-wrap italic pt-4 text-[20px]/8  text-muted">{project.where}</p>
           <Card.Description className="text-wrap pt-4 text-[20px]/8 ">
             {project.description}
           </Card.Description>

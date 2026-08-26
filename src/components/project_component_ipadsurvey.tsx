@@ -2,12 +2,6 @@
 
 import React from "react";
 
-const metrics = [
-  { value: "4 weeks", label: "Research cycle" },
-  { value: "107", label: "Responses collected" },
-  { value: "205", label: "People invited" },
-];
-
 const frictionAreas = [
   {
     number: "01",
@@ -65,7 +59,7 @@ const recommendations = [
 export default function FieldWorkExperienceCaseStudy() {
   return (
     <main className="mx-auto max-w-4xl px-6 py-16 md:py-24">
-      <header className="mb-24 max-w-3xl">
+      <header className="mb-10 max-w-3xl">
         <p className="mb-4 text-sm font-medium uppercase tracking-widest text-default-500">
           Research · Service Design · AI-assisted Analysis
         </p>
@@ -85,18 +79,13 @@ export default function FieldWorkExperienceCaseStudy() {
           </p>
         </div>
 
-        <div className="mt-14 grid gap-8 border-y border-default-200 py-8 sm:grid-cols-3">
-          {metrics.map((metric) => (
-            <div key={metric.label}>
-              <p className="text-2xl font-semibold tracking-tight">
-                {metric.value}
-              </p>
-              <p className="mt-1 text-sm text-default-500">{metric.label}</p>
-            </div>
-          ))}
-        </div>
+        
       </header>
-
+      <img
+          src="/assets/img/ipadsurvey_imgs/survey_stats.png"
+          alt="Survey statistics showing 4 weeks research cycle, 205 people invited, and 107 responses collected."
+          className="rounded-lg mb-10 "
+        />
       <Section title="Overview">
         <p>
           A potential hardware upgrade raised a straightforward question:
@@ -184,13 +173,6 @@ export default function FieldWorkExperienceCaseStudy() {
         </p>
 
         <p>
-          The survey reached 205 people and received 107 responses, combining
-          quantitative indicators with open-ended feedback.
-        </p>
-
-        <ResearchProcess />
-
-        <p>
           AI was used as an assistant during the analysis process to help
           compile responses and organize recurring themes across the data.
         </p>
@@ -203,19 +185,8 @@ export default function FieldWorkExperienceCaseStudy() {
       </Section>
 
       <Section title="The device was valued—even when it wasn't enough">
-        <div className="my-12 border-y border-default-200 py-10">
-          <div className="grid gap-8 md:grid-cols-[0.8fr_1.2fr] md:items-center">
-            <div>
-              <p className="text-6xl font-semibold tracking-tight md:text-7xl">
-                77%
-              </p>
-              <p className="mt-3 text-sm text-default-500">
-                of respondents evaluated their experience with the iPad
-                positively
-              </p>
-            </div>
-
-            <div className="space-y-4 text-default-600">
+        
+        <div className="space-y-4 text-default-600">
               <p>
                 Practicality and portability were important strengths,
                 particularly for people working across different locations.
@@ -229,8 +200,11 @@ export default function FieldWorkExperienceCaseStudy() {
                 and applications revealed limitations beyond the device itself.
               </p>
             </div>
-          </div>
-        </div>
+        <img
+          src="/assets/img/ipadsurvey_imgs/overall_satisfaction.png"
+          alt="Survey statistics showing 4 weeks research cycle, 205 people invited, and 107 responses collected."
+          className="rounded-lg mb-10 "
+        />
 
         <Quote>
           People didn't dislike the device. They were struggling with parts of
@@ -247,24 +221,24 @@ export default function FieldWorkExperienceCaseStudy() {
         <FrictionAreas />
 
         <p>
-          The same device could support one task effectively while becoming a
-          source of friction in another context.
+          The same device could support one task effectively while becoming 
+          a source of friction in another context. In fact, 45% of respondents 
+          reported experiencing some kind of challenge, 
+          meaning that <br/>at least <span className="font-bold">one in four</span> field team members 
+          faced friction with the equipment.
         </p>
+
+          <img
+          src="/assets/img/ipadsurvey_imgs/challenges.png"
+          alt="Survey statistics showing 4 weeks research cycle, 205 people invited, and 107 responses collected."
+          className="rounded-lg mb-10 "
+        />
       </Section>
 
       <Section title="Looking beyond the device">
         <p>
           The most important shift in the project was a change in perspective.
         </p>
-
-        <Quote>The iPad wasn't the experience.</Quote>
-
-        <p>
-          It was one part of a broader system that shaped how people were able
-          to work.
-        </p>
-
-        <WorkExperienceEcosystem />
 
         <p>
           Replacing the hardware could solve some problems, particularly those
@@ -307,6 +281,16 @@ export default function FieldWorkExperienceCaseStudy() {
           ecosystem rather than assuming that newer hardware was the answer to
           every problem.
         </p>
+        <img
+          src="/assets/img/ipadsurvey_imgs/conclusion1.png"
+          alt=""
+          className="rounded-lg"
+        />
+        <img
+          src="/assets/img/ipadsurvey_imgs/conclusion2.png"
+          alt=""
+          className="rounded-lg mb-10 "
+        />
       </Section>
 
       <Section title="Outcome">
@@ -408,10 +392,10 @@ function Section({
 }) {
   return (
     <section className="mb-24">
-      <p className="mb-5 text-sm font-medium uppercase tracking-widest text-default-500">
+      <p className="mb-4 text-[30px] font-light tracking-widest text-default-500">
         {title}
       </p>
-      <div className="max-w-3xl space-y-6 text-lg leading-relaxed text-default-700">
+      <div className="space-y-6 text-lg leading-relaxed text-default-700">
         {children}
       </div>
     </section>
@@ -423,38 +407,6 @@ function Quote({ children }: { children: React.ReactNode }) {
     <blockquote className="my-10 border-l-2 border-foreground pl-6 text-xl font-medium leading-relaxed md:text-2xl">
       {children}
     </blockquote>
-  );
-}
-
-function ResearchProcess() {
-  const steps = [
-    ["Research question", "What is creating friction in the field experience?"],
-    ["Field team feedback", "Quantitative responses and qualitative feedback"],
-    [
-      "AI-assisted analysis",
-      "Compiling results and organizing recurring patterns",
-    ],
-    ["Design interpretation", "Understanding what was actually causing friction"],
-    ["Recommendations", "Turning evidence into actionable decisions"],
-  ];
-
-  return (
-    <div className="my-12 border-y border-default-200">
-      {steps.map(([title, description], index) => (
-        <div
-          key={title}
-          className="grid grid-cols-[48px_1fr] gap-5 border-b border-default-200 py-6 last:border-b-0"
-        >
-          <span className="text-sm font-medium text-default-400">
-            {String(index + 1).padStart(2, "0")}
-          </span>
-          <div>
-            <h3 className="font-semibold">{title}</h3>
-            <p className="mt-1 text-sm text-default-600">{description}</p>
-          </div>
-        </div>
-      ))}
-    </div>
   );
 }
 
@@ -474,43 +426,6 @@ function FrictionAreas() {
         </article>
       ))}
     </div>
-  );
-}
-
-function WorkExperienceEcosystem() {
-  const elements = [
-    "Device",
-    "Software",
-    "Interaction",
-    "Connectivity",
-    "Environment",
-    "Tasks",
-  ];
-
-  return (
-    <figure className="my-12 border border-default-200 p-6 md:p-10">
-      <figcaption>
-        <p className="text-sm font-medium uppercase tracking-widest text-default-500">
-          The work experience ecosystem
-        </p>
-        <p className="mt-2 text-default-600">
-          The device was only one part of a broader system.
-        </p>
-      </figcaption>
-
-      <div className="mt-10 flex flex-wrap items-center gap-x-3 gap-y-4">
-        {elements.map((element, index) => (
-          <React.Fragment key={element}>
-            <span className="border border-default-200 px-4 py-3 text-sm font-medium">
-              {element}
-            </span>
-            {index < elements.length - 1 && (
-              <span className="hidden text-default-400 sm:inline">→</span>
-            )}
-          </React.Fragment>
-        ))}
-      </div>
-    </figure>
   );
 }
 

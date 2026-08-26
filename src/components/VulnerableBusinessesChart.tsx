@@ -1,5 +1,3 @@
-"use client";
-
 import {
   Bar,
   BarChart,
@@ -77,18 +75,13 @@ export function VulnerableBusinessesChart() {
     <section className="w-full">
       <div className="overflow-hidden rounded-lg border border-default-200 bg-background p-6 md:p-10">
         <div className="grid gap-10 lg:grid-cols-[0.8fr_1.4fr] lg:items-center">
-          {/* Context */}
           <div>
-            <h2 className="text-[25px] font-light leading-tight  text-foreground ">
-              We knew that{" "}
-              <span>
-                small and micro businesses
-              </span>{" "}
-              were among the businesses most affected by the COVID-19 crisis.
+            <h2 className="text-[25px] font-light leading-tight text-foreground">
+              We knew that <span>small and micro businesses</span> were among
+              the businesses most affected by the COVID-19 crisis.
             </h2>
           </div>
 
-          {/* Chart */}
           <div className="min-w-0">
             <h3 className="mb-4 text-sm font-medium text-default-500 md:text-base">
               Number of small businesses in the segments most vulnerable to the
@@ -107,7 +100,6 @@ export function VulnerableBusinessesChart() {
                     stroke="currentColor"
                     className="text-default-200"
                   />
-
                   <XAxis
                     type="number"
                     domain={[0, 2_000_000]}
@@ -118,7 +110,6 @@ export function VulnerableBusinessesChart() {
                     tick={{ fill: "currentColor", fontSize: 13 }}
                     className="text-default-500"
                   />
-
                   <YAxis
                     type="category"
                     dataKey="name"
@@ -126,7 +117,6 @@ export function VulnerableBusinessesChart() {
                     axisLine={false}
                     tickLine={false}
                   />
-
                   <Bar
                     dataKey="value"
                     fill="currentColor"
@@ -134,10 +124,7 @@ export function VulnerableBusinessesChart() {
                     radius={0}
                     isAnimationActive={false}
                   >
-                    <LabelList
-                      dataKey="value"
-                      content={<CustomLabel />}
-                    />
+                    <LabelList dataKey="value" content={<CustomLabel />} />
                   </Bar>
                 </BarChart>
               </ResponsiveContainer>

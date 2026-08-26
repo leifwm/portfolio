@@ -1,5 +1,5 @@
-import { VulnerableBusinessesChart } from "../../assets/img/pertinho_imgs/VulnerableBusinessesChart";
-import { BusinessSegmentationMatrix } from "../../assets/img/pertinho_imgs/BusinessSegmentationMatrix";
+import { VulnerableBusinessesChart } from "./VulnerableBusinessesChart";
+import { BusinessSegmentationMatrix } from "./BusinessSegmentationMatrix";
 import traditionalSellerImage from "../../assets/img/pertinho_imgs/Persona_TraditionalSeller.JPG";
 import entrepreneurImage from "../../assets/img/pertinho_imgs/Persona_Entrepreneur.JPG";
 import establishedBusinessImage from "../../assets/img/pertinho_imgs/Persona_EstablishedBusiness.JPG";

@@ -8,5 +8,9 @@ export default defineConfig(({ mode }) => ({
   resolve: {
     tsconfigPaths: true,
   },
+    server: {
+    host: '0.0.0.0', // Exposes the server to the local network
+    port: 5173       // Optional: enforce your default port
+  },
   plugins: [react(), tailwindcss()],
 }));

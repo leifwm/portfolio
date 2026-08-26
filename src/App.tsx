@@ -6,7 +6,7 @@ import CVPage from "@/pages/cv";
 import TratoPage from "@/pages/trato";
 import PertinhoPage from "@/pages/pertinho";
 import SerDigitalCaseStudy from "@/pages/ser";
-import FieldWorkExperienceCaseStudy from "./components/project_component_ipadsurvey";
+import IPadSurveyPage from "@/pages/ipadsurvey";
 
 
 function App() {
@@ -18,7 +18,7 @@ function App() {
       <Route element={<TratoPage />} path="/trato" />
       <Route element={<PertinhoPage />} path="/pertinho" />
       <Route element={<SerDigitalCaseStudy />} path="/ser" />
-      <Route element={<FieldWorkExperienceCaseStudy />} path="/ipadsurvey" />
+      <Route element={<IPadSurveyPage />} path="/ipadsurvey" />
     </Routes>
   );
 }

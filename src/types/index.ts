@@ -10,6 +10,7 @@ export type Project = {
   img: string;
   format: string;
   description: string;
+  where: string;
   tags: string[];
   href: string;
 };
