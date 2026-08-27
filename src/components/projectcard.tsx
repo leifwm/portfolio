@@ -14,12 +14,14 @@ type ProjectCardProps = {
 export const ProjectCard = ({ project }: ProjectCardProps) => {
   return (
     <Card className="
-            border-y 
-            border-foreground/10 
+            border
+            border-foreground/10
+           
             w-auto h-auto min-h-50
             items-stretch 
-            md:flex-row mt-10 p-8 
-            rounded-none shadow-none 
+            mx-20 my-10
+            md:flex-row p-8 
+            rounded-3xl shadow-md
             bg-background">
       <div className="relative size-40 min-h-40 shrink-0 aspect-square overflow-hidde md:h-auto md:w-1/2 md:aspect-auto md:self-stretch">
         {project.format === "application/lottie" ? (

@@ -38,10 +38,13 @@ export default function IndexPage() {
           <span className="text-[80px] font-bold"> solutions</span>
         </motion.div>
       </section>
-            <div className="mx-4 flex flex-row items-center bg-background py-4">
+      
+        <div className="mx-4 flex flex-row items-center bg-background py-4">
              <h1 id="projects" className="text-foreground font-thin mx-10 text-[90px]">projects</h1>
               <Separator className="my-3.5 flex-1 bg-foreground/50"/>
-           </div>
+        </div>
+            
+
       <div>
         {projectPreviews.projects.slice(0, 4).map((project) => (
           <ProjectCard project={project} key={project.id} />

@@ -18,7 +18,7 @@ export const projectPreviews = {
       title: "Pertinho de Casa",
       img: assetUrl("/assets/img/project_thumbnails/PertinhoLogo.png"),
       format: "image/png",
-      description: "Translated to Close to Home was a digital service born from Aa non-profit joint venture between Rede Asta and Accenture to help micro and small business during the pandemic by creating a B2C service",
+      description: "Translated to Close to Home was a digital service born from a non-profit joint venture between Rede Asta and Accenture to help micro and small business during the pandemic by creating a B2C service.",
       where: "At Accenture for Non Profit Venture with Rede Asta",
       tags: ["Service Design", "Product Design"],
       href: "/pertinho",
