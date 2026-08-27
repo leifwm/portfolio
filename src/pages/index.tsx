@@ -28,7 +28,7 @@ export default function IndexPage() {
           transition={{ ease: "easeInOut", duration: 2 }}
           className="relative  inline-block max-auto text-left justify-center  text-base/16"
           >
-          <span className="text-[80px] font-bold">Designer&nbsp;</span>
+          <span className="text-[80px] font-bold">Design&nbsp;</span>
           <br />
           <span className="text-[80px] font-bold text-[#39DD91]">generating value&nbsp;</span>
           <br />

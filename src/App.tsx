@@ -2,6 +2,7 @@ import { Route, Routes } from "react-router-dom";
 
 import IndexPage from "@/pages/index";
 import ProjectsPage from "@/pages/projects";
+import AboutPage from "@/pages/about";
 import CVPage from "@/pages/cv";
 import TratoPage from "@/pages/trato";
 import PertinhoPage from "@/pages/pertinho";
@@ -14,6 +15,7 @@ function App() {
     <Routes>
       <Route element={<IndexPage />} path="/" />
       <Route element={<ProjectsPage />} path="/projects" />
+      <Route element={<AboutPage />} path="/about" />
       <Route element={<CVPage />} path="/cv" />
       <Route element={<TratoPage />} path="/trato" />
       <Route element={<PertinhoPage />} path="/pertinho" />
