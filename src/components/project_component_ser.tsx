@@ -2,6 +2,7 @@
 
 import React from "react";
 import { assetUrl } from "@/config/site";
+import serCoverImage from "../../assets/img/serdigital_imgs/ser_cover.jpg";
 
 const studentMindsets = [
   {
@@ -13,7 +14,7 @@ const studentMindsets = [
   {
     title: "Pratical",
     description:
-      "Is pursuing an undergraduate degree with the goal of external rewards—such as employment, promotions, résumé building, recognition, among others. Not necessarily interested in the learning itself, but in what can be gained from it.",
+      "Is pursuing an undergraduate degree with the goal of external rewards, such as employment, promotions, résumé building, recognition, among others. Not necessarily interested in the learning itself, but in what can be gained from it.",
     position: "top-right",
   },
   {
@@ -25,8 +26,8 @@ const studentMindsets = [
   {
     title: "Apathetic",
     description:
-      "Will pursue a degree due to social pressure, whether from family obligation or a ‘social contract.’ For many, after graduating from high school, college seems to be the natural next step—even if they don’t really know why.",
-    position: "bottom-left",
+      "Will pursue a degree due to social pressure, whether from family obligation or a ‘social contract.’ For many, after graduating from high school, college seems to be the natural next step, even if they don’t really know why.",
+    position: "bottom-right",
   },
 ];
 
@@ -138,7 +139,11 @@ export default function SerDigitalCaseStudy() {
           </p>
         </div>
       </header>
-
+      <img
+        src={serCoverImage}
+        alt="Photo by Vinicius Amano on Unsplash"
+        className="mb-6 rounded-lg"
+      />
       {/* Overview */}
       <Section title="Overview">
         <p>
@@ -174,32 +179,39 @@ export default function SerDigitalCaseStudy() {
         </p>
 
         <p>
-          The challenge was to move beyond isolated improvements and establish a
-          coherent experience strategy that could guide future services and
-          investments across the ecosystem.
+          The challenge was to understand the factors that negatively impacted 
+          student experiences and led to dropout. The goal was to move beyond 
+          isolated improvements and establish a coherent experience strategy that could guide future services and investments across the ecosystem.
         </p>
       </Section>
 
       {/* Role */}
       <Section title="My role">
-        <div className="rounded-lg border border-default-200 p-6">
-          <h3 className="font-semibold">Service Design / Experience Strategy</h3>
+  <div className="rounded-lg border border-default-200 p-6">
+    <h3 className="font-semibold">
+      Service Design / Experience Strategy / Research Leadership
+    </h3>
 
-          <p className="mt-3 text-default-600">
-            My work contributed to translating research and strategic direction
-            into a coherent vision for the future student experience.
-          </p>
+    <p className="mt-3 text-default-600">
+      I led the research team throughout the creation, execution, and synthesis
+      of the research, while contributing to translating the findings and
+      strategic direction into a coherent vision for the future student
+      experience.
+    </p>
 
-          <div className="mt-6 grid gap-2 text-default-600 sm:grid-cols-2">
-            <span>— Research synthesis</span>
-            <span>— Student segmentation</span>
-            <span>— Experience strategy</span>
-            <span>— Opportunity definition</span>
-            <span>— Service ecosystem design</span>
-            <span>— Initiative prioritization</span>
-          </div>
-        </div>
-      </Section>
+    <div className="mt-6 grid gap-2 text-default-600 sm:grid-cols-2">
+      <span>— Research planning & design</span>
+      <span>— Research team leadership</span>
+      <span>— Research execution</span>
+      <span>— Research synthesis</span>
+      <span>— Student segmentation</span>
+      <span>— Experience strategy</span>
+      <span>— Opportunity definition</span>
+      <span>— Service ecosystem design</span>
+      <span>— Initiative prioritization</span>
+    </div>
+  </div>
+</Section>
 
       {/* Student understanding */}
       <Section title="Students don't all experience university in the same way">
@@ -240,8 +252,7 @@ export default function SerDigitalCaseStudy() {
         <ExperienceStrategy />
 
         <Quote>
-          A great experience starts by solving today's problems, but creates
-          value by helping people move toward what's next.
+          A great experience starts with doing the basics well.
         </Quote>
       </Section>
 
@@ -275,10 +286,6 @@ export default function SerDigitalCaseStudy() {
           the mobile and digital experience.
         </p>
 
-        <Callout>
-          The goal wasn't simply to add more digital channels. It was to make
-          the existing experience feel more coherent.
-        </Callout>
         <img src={assetUrl("/assets/img/serdigital_imgs/roadmap.jpg")} alt="Student Personas" className="mb-6 rounded-lg"/>
       </Section>
 
@@ -304,30 +311,6 @@ export default function SerDigitalCaseStudy() {
 
       </Section>
 
-      {/* Transformation */}
-      <Section title="Designing the transformation, not just the destination">
-        <p>
-          A new experience cannot be created through interfaces and services
-          alone.
-        </p>
-
-        <Quote>
-          The organization around the experience has to evolve too.
-        </Quote>
-
-        <p>
-          The transformation connected experience initiatives with broader
-          enablers such as customer experience, technology, innovation, culture,
-          leadership, and new ways of working.
-        </p>
-
-        <p>
-          This was an important part of the project's perspective: meaningful
-          service transformation requires the capabilities to sustain the
-          experience after it is designed.
-        </p>
-      </Section>
-
       {/* Outcome */}
       <Section title="Outcome">
         <p>
@@ -347,44 +330,42 @@ export default function SerDigitalCaseStudy() {
           </li>
         </ul>
       </Section>
-
-      {/* Reflection */}
-      <section className="pt-8">
-        <hr className="mb-12 border-default-200" />
-
-        <p className="text-sm font-medium uppercase tracking-widest text-default-500">
-          Reflection
+    <Section title="News">
+        <h1 className="text-2xl font-bold underline hover:text-accent">
+          <a
+            href="https://www.diariodepernambuco.com.br/noticia/vidaurbana/2018/12/ser-educacional-entre-as-melhores-empresas-do-brasil-em-2018.html"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Diario de Pernambuco
+          </a>
+        </h1>
+        <h2>Ser Educacional among the best companies in Brazil in 2018.</h2>
+        <Quote> According to the company’s president, Jânyo Diniz, 
+          innovation was the main investment in 2018. “We realized that we 
+          needed to change some things to improve our students’ experience, 
+          so we invested in innovation through the Ser Digital project. 
+          Without a doubt, it was a very successful decision,” explains Diniz.
+        </Quote>
+        <h1 className="text-2xl font-bold underline hover:text-accent">
+          <a
+            href="https://www.seudinheiro.com/2021/empresas/ser-educacional-janyo-diniz-entrevista/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            SeuDinheiro
+          </a>
+        </h1>
+        <h2>Ser Educacional already envisions the future of education — and has a plan to get there.</h2>
+        <p> 
+          Results shared for the years following the project
         </p>
+        <img src={assetUrl("/assets/img/serdigital_imgs/ser-resultados.png")} alt="Student Personas" className="mb-6 rounded-lg"/>
 
-        <h2 className="mt-4 text-3xl font-semibold tracking-tight md:text-4xl">
-          Designing an experience at ecosystem scale means designing
-          relationships, not individual touchpoints.
-        </h2>
 
-        <div className="mt-8 space-y-6 text-lg leading-relaxed text-default-600">
-          <p>
-            A university can improve a portal, an app, or a customer-service
-            process individually. But a meaningful student experience emerges
-            from how those things connect—and whether they collectively help
-            someone achieve what they came to university for.
-          </p>
+      </Section>
 
-          <p>
-            This project reinforced the importance of connecting strategy with
-            implementation. A vision becomes useful when it helps people make
-            decisions about what to improve, what to build, and what needs to
-            change around the experience.
-          </p>
-        </div>
-
-        <div className="mt-12 border-l-2 border-foreground py-2 pl-6">
-          <p className="text-xl font-medium leading-relaxed">
-            The value of service design at scale isn't just imagining a better
-            experience. It's creating a shared path toward making that
-            experience possible.
-          </p>
-        </div>
-      </section>
+      
     </main>
   );
 }
@@ -420,13 +401,7 @@ function Quote({ children }: { children: React.ReactNode }) {
   );
 }
 
-function Callout({ children }: { children: React.ReactNode }) {
-  return (
-    <div className="my-10 rounded-lg bg-default-100 px-6 py-5 text-lg font-medium">
-      {children}
-    </div>
-  );
-}
+
 
 /* -------------------------------------------------------------------------- */
 /* Student mindset matrix                                                      */
@@ -475,12 +450,12 @@ function StudentMindsetMatrix() {
           />
           <MindsetCell
             title="Instinctive"
-            description={studentMindsets[3].description}
+            description={studentMindsets[2].description}
             className="border-r"
           />
           <MindsetCell
             title="Apathetic"
-            description={studentMindsets[2].description}
+            description={studentMindsets[3].description}
           />
         </div>
 

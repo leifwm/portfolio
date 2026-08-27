@@ -6,28 +6,28 @@ export const insights = [
     description:
       "Truck drivers already had powerful informal networks. WhatsApp groups and personal relationships were used to find loads, share information about routes and dangers, exchange recommendations, and socialize.",
     implication:
-      "Instead of replacing existing behaviors, the service needed to integrate with and strengthen the networks drivers already trusted.",
+      "The service would not replace this network, but it can help share and organize information that supports drivers. This highlights the importance of features such as link sharing.",
   },
   {
     title: "Experience creates expertise",
     description:
       "Drivers learn which routes, loads, stops, and services are worth choosing through years of experience. Because of this, social validation matters.",
     implication:
-      "Trust and reputation needed to become part of the service infrastructure.",
+      "Every truck is an influencer, their experience guide new arrivals. The service could help share this knowledge between drivers",
   },
   {
     title: "Financial complexity is different on the road",
     description:
       "Drivers handle significant cash flows while often operating with thin margins and unpredictable expenses. Money for the truck and money for home are frequently managed separately.",
     implication:
-      "Services needed to reflect the rhythms and realities of a driver's business and family life.",
+      "Support with financial security and predictability is paramount for drivers’ peace of mind, underscoring the value of insurance and other safety nets.",
   },
   {
     title: "Predictability is a form of value",
     description:
       "From fuel and tire expenses to finding a return load, many of the most valuable opportunities helped drivers prepare for what might happen next.",
     implication:
-      "The service should not only help drivers react to problems. It should help them anticipate and navigate uncertainty.",
+      "The service should help drivers anticipate and navigate uncertainty. Features such as route mapping, stop visualization, and other planning tools can support better preparation and help avoid surprises.",
   },
 ];
 
@@ -42,7 +42,7 @@ export const principles = [
     title: "Recognition",
     quote: "I want to be seen and remembered.",
     description:
-      "Treat the driver as the most important part of the service—not simply as supply for the logistics system.",
+      "Treat the driver as the most important part of the service, not simply as supply for the logistics system.",
   },
   {
     title: "Transparency",
@@ -120,7 +120,7 @@ export default function TratoCareCaseStudy() {
         <div className="mt-10 border-l-2 border-foreground pl-6">
           <p className="text-lg leading-relaxed md:text-xl">
             How might we help independent truck drivers navigate the uncertainty
-            of life on the road—while creating a foundation for a new logistics
+            of life on the road while creating a foundation for a new logistics
             ecosystem?
           </p>
         </div>
@@ -131,9 +131,9 @@ export default function TratoCareCaseStudy() {
       {/* Overview */}
       <Section title="Overview">
         <p>
-          Trato was created to improve the experience of truck drivers in Brazil.
+          Trato was a pilot created to help VLI connect truckdrivers with their logistic infrastructure.
           But as the business evolved, an important question emerged:
-          <strong> what does it really mean to care for the truck driver?</strong>
+          <strong>  is this enough to remain competitive in a rapidly digitizing market?</strong>
         </p>
 
         <p>
@@ -164,15 +164,10 @@ export default function TratoCareCaseStudy() {
           on a single transaction: matching a driver with a load.
         </p>
 
-        <Callout>
-          The opportunity was bigger than building another freight app.
-        </Callout>
-
         <p>
-          We set out to understand how Trato could create a more meaningful and
-          lasting relationship with truck drivers—and use that relationship as the
-          foundation for a broader service ecosystem.
+          The opportunity was bigger than building another freight app.
         </p>
+
       </Section>
 
       {/* Role */}
@@ -229,11 +224,6 @@ export default function TratoCareCaseStudy() {
           when they would arrive home.
         </p>
 
-        <p>
-          To design a meaningful service, we needed to look at the{" "}
-          <strong>whole system of the driver&apos;s life</strong>, not individual
-          transactions in isolation.
-        </p>
       </Section>
 
       {/* Insights */}
@@ -334,15 +324,15 @@ export default function TratoCareCaseStudy() {
         <div className="mt-8 space-y-6">
           <JourneyMoment
             title="Before the trip"
-            description="Plan the route, understand costs, and prepare for the journey."
+            description="Plan the route, understand costs, and plan for the journey."
           />
           <JourneyMoment
             title="Finding and managing freight"
-            description="Find relevant opportunities, increase confidence in transactions, and improve visibility into the next move."
+            description="Find optimal opportunities, increase confidence in transactions with previously unknown companies."
           />
           <JourneyMoment
             title="On the road"
-            description="Access useful information, connect with the community, and make better decisions in changing conditions."
+            description="Access useful information, connect with the community, and adapt better to changing conditions."
           />
           <JourneyMoment
             title="Managing the business"
@@ -368,24 +358,11 @@ export default function TratoCareCaseStudy() {
           Internet access could also be intermittent.
         </p>
 
+      
         <p>
-          This shifted the design conversation from:
-        </p>
-
-        <Quote>
-          “How do we get drivers into our platform?”
-        </Quote>
-
-        <p>To:</p>
-
-        <Quote>
-          “How can the platform fit naturally into the way drivers already live
-          and work?”
-        </Quote>
-
-        <p>
-            For this we presented service concepts options with real-world scenarios 
-            applied to understand what kind of service better answered the trucker's needs.
+          To better understand which solutions would integrate most effectively, 
+          we presented different service concept options using real-world scenarios. 
+          This approach helped us identify which type of service best addressed truck drivers&apos; needs.
         </p>
 
         <img src={assetUrl("/assets/img/trato_imgs/trato_service_concepts.jpg")} alt="Service Concepts" className="mb-6 rounded-lg" />
@@ -422,7 +399,6 @@ export default function TratoCareCaseStudy() {
 
         <ul className="mt-6 space-y-3 text-default-600">
           <li>— A deeper understanding of the truck driver&apos;s end-to-end experience</li>
-          <li>— A clear set of experience drivers to guide future services</li>
           <li>— A unifying service vision for Trato Care</li>
           <li>— A portfolio of interconnected service opportunities</li>
           <li>— A rationale for evolving toward an ecosystem model</li>
@@ -443,40 +419,6 @@ export default function TratoCareCaseStudy() {
         </ul>
 
       </Section>
-
-      {/* Reflection */}
-      <section className="pt-8">
-        <hr className="mb-12 border-default-200" />
-
-        <p className="text-sm font-medium uppercase tracking-widest text-default-500">
-          Reflection
-        </p>
-
-        <h2 className="mt-4 text-3xl font-semibold tracking-tight md:text-4xl">
-          The biggest opportunities are often hidden between categories.
-        </h2>
-
-        <div className="mt-8 space-y-6 text-lg leading-relaxed text-default-600">
-          <p>
-            At first glance, freight, fuel, tires, finance, safety, and community
-            appear to be separate problems. But from the perspective of a truck
-            driver, they are all part of the same challenge: navigating an
-            unpredictable life while maintaining independence.
-          </p>
-
-          <p>
-            Service design helped us connect those experiences and create a common
-            direction for the ecosystem.
-          </p>
-        </div>
-
-        <div className="mt-12 border-l-2 border-foreground py-2 pl-6">
-          <p className="text-xl font-medium leading-relaxed">
-            How can Trato become a trusted partner in helping truck drivers
-            navigate life on the road?
-          </p>
-        </div>
-      </section>
     </main>
   );
 }

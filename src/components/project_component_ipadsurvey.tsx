@@ -100,21 +100,12 @@ export default function FieldWorkExperienceCaseStudy() {
         </p>
 
         <p>
-          Over a four-week research cycle, we gathered feedback from the field
-          team and combined quantitative responses with qualitative feedback to
-          build a clearer picture of their experience.
-        </p>
-
-        <p>
           AI was used to help analyze and compile the results, accelerating the
           synthesis process and creating more time to focus on interpreting what
           the findings meant.
         </p>
 
-        <Quote>
-          What began as a question about replacing a device became a broader
-          investigation into the system surrounding it.
-        </Quote>
+
       </Section>
 
       <Section title="The challenge">
@@ -332,53 +323,7 @@ export default function FieldWorkExperienceCaseStudy() {
         </Quote>
       </Section>
 
-      <section className="pt-8">
-        <hr className="mb-12 border-default-200" />
-
-        <p className="text-sm font-medium uppercase tracking-widest text-default-500">
-          Reflection
-        </p>
-
-        <h2 className="mt-4 text-3xl font-semibold tracking-tight md:text-4xl">
-          A product problem is often a system problem in disguise.
-        </h2>
-
-        <div className="mt-8 max-w-3xl space-y-6 text-lg leading-relaxed text-default-600">
-          <p>
-            This project reinforced the importance of looking beyond the object
-            at the center of a business question.
-          </p>
-
-          <p>
-            The devices had real limitations, and replacing aging hardware was
-            part of the answer. But the research showed that the experience was
-            also shaped by software, workflows, physical interaction, and the
-            environments where people worked.
-          </p>
-
-          <p>
-            A newer device can solve a performance problem. It can't necessarily
-            solve a workflow problem.
-          </p>
-        </div>
-
-        <div className="mt-12 border-l-2 border-foreground py-2 pl-6">
-          <p className="text-xl font-medium leading-relaxed">
-            Research creates value not just by validating a decision, but by
-            making sure an organization is solving the right problem before it
-            invests in a solution.
-          </p>
-        </div>
-
-        <div className="mt-12 max-w-3xl space-y-6 text-lg leading-relaxed text-default-600">
-          <p>
-            This project was also an example of how AI can support research
-            practice. Used thoughtfully, it can help accelerate the work of
-            organizing and compiling information—creating more space for
-            interpretation and judgment.
-          </p>
-        </div>
-      </section>
+      
     </main>
   );
 }

@@ -3,6 +3,7 @@ import { BusinessSegmentationMatrix } from "./BusinessSegmentationMatrix";
 import traditionalSellerImage from "../../assets/img/pertinho_imgs/Persona_TraditionalSeller.JPG";
 import entrepreneurImage from "../../assets/img/pertinho_imgs/Persona_Entrepreneur.JPG";
 import establishedBusinessImage from "../../assets/img/pertinho_imgs/Persona_EstablishedBusiness.JPG";
+import coverPertinhoImage from "../../assets/img/pertinho_imgs/cover_pertinho.jpg";
 import fluxoCadastroImage from "../../assets/img/pertinho_imgs/fluxo_cadastro.jpg";
 import roadmapImage from "../../assets/img/pertinho_imgs/roadmap.jpg";
 
@@ -123,6 +124,12 @@ export default function PertinhoDeCasaCaseStudy() {
         </div>
       </header>
 
+      <img
+        src={coverPertinhoImage}
+        alt="Photo by Gigi Visacri on Unsplash"
+        className="mb-6 rounded-lg"
+      />
+
       {/* Overview */}
       <Section title="Overview">
         <p>
@@ -217,12 +224,6 @@ export default function PertinhoDeCasaCaseStudy() {
         </p>
           <VulnerableBusinessesChart />
         <p>
-          We analyzed vulnerable categories of small businesses and explored
-          where the service could have both meaningful social impact and a
-          realistic path to adoption.
-        </p>
-
-        <p>
           The initial focus became food and beverage businesses—including street
           markets, restaurants, bars, produce sellers, and prepared food
           businesses.
@@ -276,7 +277,7 @@ export default function PertinhoDeCasaCaseStudy() {
           By combining these dimensions, we could identify distinct patterns of
           need rather than treating every business as the same.
         </p>
-        <BusinessSegmentationMatrix />
+
       </Section>
 
       {/* Personas */}
@@ -296,39 +297,6 @@ export default function PertinhoDeCasaCaseStudy() {
             </article>
           ))}
         </div>
-      </Section>
-
-      {/* Research */}
-      <Section title="Understanding adaptation in real time">
-        <p>
-          We interviewed small business owners as they were actively responding
-          to the crisis.
-        </p>
-
-        <p>
-          The strongest finding was that{" "}
-          <strong>business owners were not waiting for a perfect solution.</strong>
-        </p>
-
-        <Quote>They were already improvising.</Quote>
-
-        <p>
-          Businesses that had never delivered products began making deliveries
-          themselves or hiring motorcycle couriers. Product catalogs were
-          assembled into simple documents and sent through WhatsApp. Social media
-          and word of mouth became even more important.
-        </p>
-
-        <p>This changed our perspective on the opportunity.</p>
-
-        <Quote>How do we digitize these businesses?</Quote>
-
-        <p>became:</p>
-
-        <Quote>
-          How can we support the solutions they are already creating for
-          themselves?
-        </Quote>
       </Section>
 
       {/* Insights */}
@@ -384,21 +352,10 @@ export default function PertinhoDeCasaCaseStudy() {
         <img src={fluxoCadastroImage} className="mt-3 rounded-lg"  alt="User flow diagram showing the steps for a business owner to register and set up their profile on the platform." />
 
         <p>
-          The project began as a response to an immediate crisis, but the
-          research suggested a broader principle.
-        </p>
-
-        <p>
           Small business owners didn't necessarily want another company
           controlling their relationship with customers. They wanted help doing
-          what they already did—better.
+          what they already did but better.
         </p>
-
-        <Quote>
-          The opportunity was to strengthen small businesses rather than replace
-          them.
-        </Quote>
-
         <p>
           This shifted the strategic opportunity away from simply building
           another marketplace and toward a service that could provide practical
@@ -465,48 +422,13 @@ export default function PertinhoDeCasaCaseStudy() {
             — Identified future opportunities around education, suppliers, and
             business support
           </li>
+          <br/>
           <p>
-            It started only in São Paulo (2020) and now (2026) it's present in all <span className="font-semibold">27 brazilian states</span> with <span className="font-semibold">17k business registered.</span>
+            It started only in São Paulo (2020) and now (2026) it's present in all <span className="font-semibold">27 brazilian states</span> with <br/><span className="font-semibold">17k business registered.</span>
           </p>
         </ul>
       </Section>
 
-      {/* Reflection */}
-      <section className="pt-8">
-        <hr className="mb-12 border-default-200" />
-
-        <p className="text-sm font-medium uppercase tracking-widest text-default-500">
-          Reflection
-        </p>
-
-        <h2 className="mt-4 text-3xl font-semibold tracking-tight md:text-4xl">
-          People are often already designing their own solutions before we
-          arrive.
-        </h2>
-
-        <div className="mt-8 space-y-6 text-lg leading-relaxed text-default-600">
-          <p>
-            When we spoke with business owners, they weren't passive recipients
-            waiting for innovation. They were experimenting, improvising, and
-            using whatever resources they had available.
-          </p>
-
-          <p>
-            The role of service design wasn't to erase those behaviors and
-            replace them with a perfect system. It was to understand what was
-            already working—and where the system could make their efforts easier,
-            safer, and more sustainable.
-          </p>
-        </div>
-
-        <div className="mt-12 border-l-2 border-foreground py-2 pl-6">
-          <p className="text-xl font-medium leading-relaxed">
-            The best response to disruption isn't always to create a completely
-            new behavior. Sometimes it's to strengthen the resilience that people
-            are already building for themselves.
-          </p>
-        </div>
-      </section>
     </main>
   );
 }
